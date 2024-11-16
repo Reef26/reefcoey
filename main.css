@@ -2,16 +2,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
 
 /* General styles */
+/* General styles */
 body {
     margin: 0;
     padding: 0;
     font-family: 'Raleway', sans-serif;
     background-color: #FFFFFF;
     color: #4A4A4A;
-    text-align: center;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    text-align: center;
+}
+
+/* Ensure the main content stretches to fill available space */
+main {
+    flex: 1; /* Pushes footer to the bottom of the page */
 }
 
 /* Header styles */
@@ -69,32 +75,34 @@ header {
 /* Links container */
 .links-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    grid-template-columns: repeat(2, 1fr); /* Ensures two tiles per row */
     gap: 20px;
     justify-items: center;
     margin: 20px auto;
     padding: 0 10px;
-    max-width: 500px;
+    max-width: 500px; /* Controls the overall grid width */
 }
 
 /* Link tile styles */
 .link-tile {
     width: 150px;
     height: 150px;
-    background-color: #4A4A4A;
+    background-color: #F1F1F1;
     border-radius: 20px;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     opacity: 0;
     transform: translateY(30px);
     animation: floatUp 1s ease-out forwards;
-    transition: transform 0.3s ease;
+    transition: transform 0.3s ease, background-color 0.3s ease;
 }
 
 .link-tile:hover {
     transform: translateY(10px);
+    background-color: #EAEAEA;
 }
 
 /* Animations staggered for tiles */
@@ -123,13 +131,29 @@ header {
     }
 }
 
-/* Tile link text styles */
-.link-tile a {
-    color: #FFFFFF;
-    text-decoration: none;
-    font-size: 1.1rem;
-    font-weight: 300;
+/* Inside the tiles */
+.link-tile img {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 10px;
+    border-radius: 10px;
 }
+
+.link-tile p {
+    font-size: 0.9rem;
+    color: #4A4A4A;
+    margin: 0;
+}
+
+/* Tile link wrapper */
+.link-tile a {
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: inherit;
+}
+
 
 /* Footer styles */
 footer {
