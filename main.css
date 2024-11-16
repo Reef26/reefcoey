@@ -92,11 +92,11 @@ header {
 
 .link-tile {
     display: flex;
-    justify-content: center; /* Horizontally center content */
-    align-items: center; /* Vertically center content */
-    flex-direction: column; /* Keeps text and image stacked */
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+    flex-direction: column; /* Keep items stacked */
     width: 100%;
-    aspect-ratio: 1;
+    aspect-ratio: 1; /* Ensure tiles remain square */
     background-color: #F1F1F1;
     border-radius: 20px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -105,7 +105,6 @@ header {
     animation: floatUp 1s ease-out forwards;
     transition: transform 0.3s ease, background-color 0.3s ease;
 }
-
 
 /* Animations staggered for tiles */
 #instagram {
@@ -135,10 +134,11 @@ header {
 
 /* Inside the tiles */
 .link-tile img {
-    max-width: 85%; /* Adjust for scaling */
-    max-height: 85%; /* Ensures it doesn't overflow the tile */
-    object-fit: cover; /* Prevents distortion while filling available space */
-    margin: 0; /* Removes extra spacing */
+    display: block; /* Prevent inline spacing issues */
+    max-width: 85%; /* Scale image */
+    max-height: 85%; /* Prevent overflow */
+    object-fit: contain; /* Center image without cropping */
+    margin: 0; /* Remove extra margins */
     border-radius: 10px;
 }
 
