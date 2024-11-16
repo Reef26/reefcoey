@@ -85,7 +85,6 @@ header {
     gap: 20px;
     justify-items: center;
     margin: 20px auto;
-    padding: 10px;
     max-width: 70%; /* Scale based on screen width */
     box-sizing: border-box; /* Ensure padding is included in width calculation */
 }
