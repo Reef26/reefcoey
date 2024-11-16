@@ -135,6 +135,15 @@ header {
 /* Inside the tiles */
 .link-tile img {
     display: block; /* Prevent inline spacing issues */
+    max-width: 85%; /* Ensure the image scales to fit the tile */
+    max-height: 85%; /* Prevent overflow */
+    object-fit: contain; /* Ensures the image is centered and fully visible without cropping */
+    margin: auto; /* Centers the image within the tile */
+    border-radius: 10px;
+}
+
+.link-tile id="full-fit" {
+    display: block; /* Prevent inline spacing issues */
     max-width: 100%; /* Ensure the image scales to fit the tile */
     max-height: 100%; /* Prevent overflow */
     object-fit: contain; /* Ensures the image is centered and fully visible without cropping */
