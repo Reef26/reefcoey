@@ -27,7 +27,7 @@ header {
     margin: 0;
     opacity: 0;
     color: #4A4A4A; /* Grey text color */
-    animation: fadeInWithLine 2s ease-in forwards;
+    animation: fadeIn 2s ease-in forwards;
 }
 
 /* Line under header */
@@ -38,18 +38,31 @@ header {
     margin: 20px auto;
     opacity: 0;
     transform: scaleX(0);
-    animation: fadeInWithLine 2s ease-in forwards;
+    animation: fadeLine 2s ease-in forwards 0.5s;
+/* Fade-in animation for header text */
 }
 
-/* Fade-in animation for header and line */
-@keyframes fadeInWithLine {
+    
+@keyframes fadeIn {
     from {
         opacity: 0;
-        transform: translateY(-20px) scaleX(0);
+        transform: translateY(-20px);
     }
     to {
         opacity: 1;
-        transform: translateY(0) scaleX(1);
+        transform: translateY(0);
+    }
+}
+
+/* Animation for the line */
+@keyframes fadeLine {
+    from {
+        opacity: 0;
+        transform: scaleX(0);
+    }
+    to {
+        opacity: 1;
+        transform: scaleX(1);
     }
 }
 
