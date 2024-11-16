@@ -133,8 +133,8 @@ header {
 
 /* Inside the tiles */
 .link-tile img {
-    max-width: 100%;
-    max-height: 100%;
+    max-width: 75%;
+    max-height: 75%;
     object-fit: cover; /* Ensures the image covers the tile while maintaining its aspect ratio */
     border-radius: 10px;
     margin-bottom: 10px;
