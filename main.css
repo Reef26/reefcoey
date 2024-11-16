@@ -91,20 +91,21 @@ header {
 }
 
 .link-tile {
-    width: 100%; /* Full width of its container */
-    aspect-ratio: 1; /* Maintain square shape */
+    display: flex;
+    justify-content: center; /* Horizontally center content */
+    align-items: center; /* Vertically center content */
+    flex-direction: column; /* Keeps text and image stacked */
+    width: 100%;
+    aspect-ratio: 1;
     background-color: #F1F1F1;
     border-radius: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     opacity: 0;
     transform: translateY(30px);
     animation: floatUp 1s ease-out forwards;
     transition: transform 0.3s ease, background-color 0.3s ease;
 }
+
 
 /* Animations staggered for tiles */
 #instagram {
@@ -134,11 +135,11 @@ header {
 
 /* Inside the tiles */
 .link-tile img {
-    max-width: 85%;
-    max-height: 85%;
-    object-fit: cover; /* Ensures the image covers the tile while maintaining its aspect ratio */
+    max-width: 85%; /* Adjust for scaling */
+    max-height: 85%; /* Ensures it doesn't overflow the tile */
+    object-fit: cover; /* Prevents distortion while filling available space */
+    margin: 0; /* Removes extra spacing */
     border-radius: 10px;
-    margin-bottom: 10px;
 }
 
 /* Tile link wrapper */
