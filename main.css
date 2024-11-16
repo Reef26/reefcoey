@@ -138,7 +138,6 @@ header {
     max-height: 85%; /* Prevent overflow */
     object-fit: contain; /* Ensures the image is centered and fully visible without cropping */
     margin: auto; /* Centers the image within the tile */
-    border-radius: 10px;
 }
 
 .full-fit img {
