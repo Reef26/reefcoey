@@ -133,7 +133,7 @@ header {
 
 /* Inside the tiles */
 .link-tile img {
-    display: block; /* Prevent inline spacing issues */
+/*    display: block; /* Prevent inline spacing issues */
     max-width: 85%; /* Ensure the image scales to fit the tile */
     max-height: 85%; /* Prevent overflow */
     object-fit: contain; /* Ensures the image is centered and fully visible without cropping */
