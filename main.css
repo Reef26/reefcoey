@@ -143,8 +143,8 @@ header {
 }
 
 .full-fit img {
-    max-width: 100%; /* Ensure the image scales to fit the tile */
-    max-height: 100%; /* Prevent overflow */
+    max-width: 100% !important; /* Ensure the image scales to fit the tile */
+    max-height: 100% !important; /* Prevent overflow */
 }
 
 /* Tile link wrapper */
