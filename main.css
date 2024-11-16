@@ -66,53 +66,49 @@ header {
     }
 }
 
-/* Main content */
-main {
-    padding: 20px;
-    flex: 1;
-}
-
 /* Links container */
 .links-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 15px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+    justify-items: center;
+    margin: 20px auto;
+    padding: 0 10px;
+    max-width: 500px;
 }
 
-/* Link widget styles */
-.link-widget {
-    width: 80%;
-    max-width: 400px;
+/* Link tile styles */
+.link-tile {
+    width: 150px;
+    height: 150px;
     background-color: #4A4A4A;
-    color: #FFFFFF;
-    text-align: center;
-    padding: 15px 20px;
-    border-radius: 10px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     opacity: 0;
     transform: translateY(30px);
     animation: floatUp 1s ease-out forwards;
-    animation-delay: 0.3s;
     transition: transform 0.3s ease;
 }
 
-.link-widget:hover {
+.link-tile:hover {
     transform: translateY(10px);
 }
 
-/* Animations staggered for widgets */
+/* Animations staggered for tiles */
 #instagram {
     animation-delay: 0.3s;
 }
 #discord {
-    animation-delay: 0.6s;
+    animation-delay: 0.5s;
 }
 #website {
-    animation-delay: 0.9s;
+    animation-delay: 0.7s;
 }
 #twitter {
-    animation-delay: 1.2s;
+    animation-delay: 0.9s;
 }
 
 /* Animation for floating up */
@@ -127,11 +123,11 @@ main {
     }
 }
 
-/* Link widget text styles */
-.link-widget a {
+/* Tile link text styles */
+.link-tile a {
     color: #FFFFFF;
     text-decoration: none;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     font-weight: 300;
 }
 
