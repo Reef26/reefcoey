@@ -1,5 +1,11 @@
 /* Import Raleway Light 300 from Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
+@media (max-width: 600px) {
+    .links-container {
+        grid-template-columns: 1fr; /* One tile per row */
+        gap: 15px; /* Adjust gap for smaller screens */
+    }
+}
 
 /* General styles */
 /* General styles */
@@ -75,18 +81,18 @@ header {
 /* Links container */
 .links-container {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* Ensures two tiles per row */
+    grid-template-columns: repeat(2, 1fr); /* Two tiles per row */
     gap: 20px;
     justify-items: center;
     margin: 20px auto;
     padding: 0 10px;
-    max-width: 700px; /* Controls the overall grid width */
+    max-width: 90%; /* Scale based on screen width */
+    box-sizing: border-box; /* Ensure padding is included in width calculation */
 }
 
-/* Link tile styles */
 .link-tile {
-    width: 300px;
-    height: 300px;
+    width: 100%; /* Full width of its container */
+    aspect-ratio: 1; /* Maintain square shape */
     background-color: #F1F1F1;
     border-radius: 20px;
     display: flex;
@@ -98,11 +104,6 @@ header {
     transform: translateY(30px);
     animation: floatUp 1s ease-out forwards;
     transition: transform 0.3s ease, background-color 0.3s ease;
-}
-
-.link-tile:hover {
-    transform: translateY(10px);
-    background-color: #EAEAEA;
 }
 
 /* Animations staggered for tiles */
@@ -133,8 +134,8 @@ header {
 
 /* Inside the tiles */
 .link-tile img {
-    max-width: 75%;
-    max-height: 75%;
+    max-width: 85%;
+    max-height: 85%;
     object-fit: cover; /* Ensures the image covers the tile while maintaining its aspect ratio */
     border-radius: 10px;
     margin-bottom: 10px;
