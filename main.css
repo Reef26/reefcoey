@@ -86,7 +86,7 @@ header {
     justify-items: center;
     margin: 20px auto;
     padding: 0 10px;
-    max-width: 90%; /* Scale based on screen width */
+    max-width: 70%; /* Scale based on screen width */
     box-sizing: border-box; /* Ensure padding is included in width calculation */
 }
 
@@ -139,12 +139,6 @@ header {
     object-fit: cover; /* Ensures the image covers the tile while maintaining its aspect ratio */
     border-radius: 10px;
     margin-bottom: 10px;
-}
-
-.link-tile p {
-    font-size: 0.9rem;
-    color: #4A4A4A;
-    margin: 0;
 }
 
 /* Tile link wrapper */
