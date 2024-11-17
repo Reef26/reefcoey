@@ -11,6 +11,9 @@
         max-width: 50%; /* Scale based on screen width */
         box-sizing: border-box; /* Ensure padding is included in width calculation */
     }
+    .body {
+        background-color: yellow;
+    }
 }
 
 /* General styles */
