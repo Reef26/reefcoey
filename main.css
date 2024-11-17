@@ -1,5 +1,17 @@
 /* Import Raleway Light 300 from Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
+@media (min-width: 600px) {
+    .links-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); /* Two tiles per row */
+        gap: 30px;
+        justify-items: center;
+        margin: 20px auto;
+        padding: 10px;
+        max-width: 70%; /* Scale based on screen width */
+        box-sizing: border-box; /* Ensure padding is included in width calculation */
+    }
+}
 
 /* General styles */
 body {
