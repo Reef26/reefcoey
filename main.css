@@ -86,7 +86,7 @@ header {
     justify-items: center;
     margin: 20px auto;
     max-width: 70%; /* Scale based on screen width */
-    box-sizing: border-box; /* Ensure padding is included in width calculation */
+/*    box-sizing: border-box; /* Ensure padding is included in width calculation */
 }
 
 .link-tile {
@@ -136,7 +136,7 @@ header {
 /*    display: block; /* Prevent inline spacing issues */
     max-width: 85%; /* Ensure the image scales to fit the tile */
     max-height: 85%; /* Prevent overflow */
-    object-fit: contain; /* Ensures the image is centered and fully visible without cropping */
+/*    object-fit: contain; /* Ensures the image is centered and fully visible without cropping */
     margin: auto; /* Centers the image within the tile */
 }
 
