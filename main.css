@@ -113,6 +113,11 @@ header {
     animation-delay: 0.9s;
 }
 
+
+#facebook {
+    animation-delay: 1.1s;
+}
+
 /* Animation for floating up */
 @keyframes floatUp {
     from {
