@@ -149,6 +149,14 @@ header {
     color: inherit;
 }
 
+/* Prevent link focus/active styles affecting dimensions */
+.link-tile:focus, 
+.link-tile:active, 
+.link-tile a:focus, 
+.link-tile a:active {
+    outline: none; /* Remove default browser outline */
+    border: none; /* Ensure no border appears */
+}
 
 /* Footer styles */
 footer {
