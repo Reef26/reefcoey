@@ -104,7 +104,6 @@ header {
     animation: floatUp 1s ease-out forwards;
     transition: transform 0.3s ease, background-color 0.3s ease;
     overflow: hidden;
-    position: realitive;
 }
 
 /* Animations staggered for tiles */
@@ -143,7 +142,7 @@ header {
 .full-fit img {
     max-width: 100% !important; /* Ensure the image scales to fit the tile */
     max-height: 100% !important; /* Prevent overflow */
-    overflow: hidden;
+    border-radius: 20px; /* Match the parent's border-radius */
 }
 
 /* Tile link wrapper */
