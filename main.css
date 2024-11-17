@@ -97,7 +97,7 @@ header {
     width: 100%;
     aspect-ratio: 1; /* Ensure tiles remain square */
     background-color: #F1F1F1;
-    border-radius: 20px;
+/*    border-radius: 20px;*/
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     opacity: 0;
     transform: translateY(30px);
@@ -138,12 +138,12 @@ header {
     max-height: 85%; /* Prevent overflow */
     object-fit: contain; /* Ensures the image is centered and fully visible without cropping */
     margin: auto; /* Centers the image within the tile */
-    border-radius: 10px;
+/*    border-radius: 10px;*/
 }
 
 /*.full-fit img {
     max-width: 100%; /* Ensure the image scales to fit the tile */
-    max-height: 100%; /* Prevent overflow */
+/*    max-height: 100%; /* Prevent overflow */
 /*}
 
 /* Tile link wrapper */
