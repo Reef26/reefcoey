@@ -103,7 +103,6 @@ header {
     transform: translateY(30px);
     animation: floatUp 1s ease-out forwards;
     transition: transform 0.3s ease, background-color 0.3s ease;
-    overflow: hidden;
 }
 
 /* Animations staggered for tiles */
@@ -134,19 +133,17 @@ header {
 
 /* Inside the tiles */
 .link-tile img {
+    display: block; /* Prevent inline spacing issues */
     max-width: 85%; /* Ensure the image scales to fit the tile */
     max-height: 85%; /* Prevent overflow */
+    object-fit: contain; /* Ensures the image is centered and fully visible without cropping */
     margin: auto; /* Centers the image within the tile */
-}
-
-full-fit {
-    overflow: hidden; /* Ensures child elements are clipped to the border */
+    border-radius: 10px;
 }
 
 .full-fit img {
     max-width: 100% !important; /* Ensure the image scales to fit the tile */
     max-height: 100% !important; /* Prevent overflow */
-    border-radius: 20px; /* Match the parent's border-radius */
 }
 
 /* Tile link wrapper */
