@@ -136,13 +136,13 @@ header {
 /*    display: block; /* Prevent inline spacing issues */
     max-width: 85%; /* Ensure the image scales to fit the tile */
     max-height: 85%; /* Prevent overflow */
-/*    object-fit: contain; /* Ensures the image is centered and fully visible without cropping */
     margin: auto; /* Centers the image within the tile */
 }
 
 .full-fit img {
     max-width: 100% !important; /* Ensure the image scales to fit the tile */
     max-height: 100% !important; /* Prevent overflow */
+    object-fit: contain; /* Ensures the image is centered and fully visible without cropping */
 }
 
 /* Tile link wrapper */
