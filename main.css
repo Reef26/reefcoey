@@ -139,6 +139,10 @@ header {
     margin: auto; /* Centers the image within the tile */
 }
 
+full-fit {
+    overflow: hidden; /* Ensures child elements are clipped to the border */
+}
+
 .full-fit img {
     max-width: 100% !important; /* Ensure the image scales to fit the tile */
     max-height: 100% !important; /* Prevent overflow */
