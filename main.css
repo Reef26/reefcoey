@@ -83,7 +83,7 @@ header {
     grid-template-columns: repeat(2, 1fr); /* Two tiles per row */
     gap: 20px;
     justify-items: center;
-    margin: 13% auto;
+    margin: 20px; auto;
     padding: 10px;
     max-width: 70%; /* Scale based on screen width */
     box-sizing: border-box; /* Ensure padding is included in width calculation */
@@ -97,7 +97,7 @@ header {
     width: 100%;
     aspect-ratio: 1; /* Ensure tiles remain square */
     background-color: #F1F1F1;
-    border-radius: 20px;*/
+    border-radius: 13%;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     opacity: 0;
     transform: translateY(30px);
