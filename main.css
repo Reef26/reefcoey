@@ -1,4 +1,4 @@
-* Import Raleway Light 300 from Google Fonts */
+/* Import Raleway Light 300 from Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
 @media (max-width: 600px) {
     .links-container {
@@ -84,6 +84,7 @@ header {
     gap: 20px;
     justify-items: center;
     margin: 20px auto;
+    padding: 10px;
     max-width: 70%; /* Scale based on screen width */
     box-sizing: border-box; /* Ensure padding is included in width calculation */
 }
@@ -141,8 +142,8 @@ header {
 }
 
 .full-fit img {
-    max-width: 100% !important; /* Ensure the image scales to fit the tile */
-    max-height: 100% !important; /* Prevent overflow */
+    max-width: 100%; /* Ensure the image scales to fit the tile */
+    max-height: 100%; /* Prevent overflow */
 }
 
 /* Tile link wrapper */
