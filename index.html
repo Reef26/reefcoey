@@ -9,23 +9,13 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Special+Gothic+Expanded+One&display=swap" rel="stylesheet">
 	<script>
-		const blocks = document.querySelectorAll('.project-block');
-		
-		const observer = new IntersectionObserver((entries) => {
-			entries.forEach((entry, index) => {
-				if (entry.isIntersecting) {
-					entry.target.style.transitionDelay = `${index * 0.15}s`;
-					entry.target.classList.add('visible');
-					observer.unobserve(entry.target);
-				}
+		window.addEventListener('DOMContentLoaded', () => {
+			document.querySelectorAll('.project-block').forEach((el, index) => {
+				el.style.animationDelay = `${index * 0.2}s`;
+				el.classList.add('animate');
 			});
-		}, { threshold: 0.1 });
-		
-		blocks.forEach((block) => {
-			observer.observe(block);
 		});
 	</script>
-
 </head>
 <body>
 	<header>
@@ -63,7 +53,7 @@
 					<img src="https://www.cardiffstudents.com/asset/Organisation/6562/Cardiff%20University.png?thumbnail_width=450&thumbnail_height=450&resize_type=ResizeFitAll" alt="ReefCraft Logo">
 				</div>
 				<div class="project-text">
-					<p>I am currently President of the German Society at Cardiff University. Here is a link to our society page on the Cardiff University Student Union webpage. My role is as leader of the committee that runs the society. All are welcome and proficiency in German is not required. We've been putting on socials and other events. We are also involved in many other activities to do with the School of Modern Languages at Cardiff University.</p>
+					<p>I am currently President of the German Society at Cardiff University. Here is a link to our society page on the Cardiff University Student Union webpage. My role as President involves being leader of the committee that runs the society. All are welcome and proficiency in German is not required. We've been putting on socials and other events. We are also involved in many other activities to do with the School of Modern Languages at Cardiff University.</p>
 				</div>
 			</div>
 		</a>
