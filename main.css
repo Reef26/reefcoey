@@ -44,6 +44,10 @@ h1 {
   color: white;
 }
 
+header a {
+  text-deocration: none;
+}
+
 h2 {
   font-family: Helvetica, sans-serif;
   font-weight: bold;
@@ -57,10 +61,6 @@ h2:hover {
 }
 
 a {
-  text-decoration: none;
-}
-
-.project-link {
   margin: 0;
   font-family: Helvetica, sans-serif;
   font-weight: bold;
