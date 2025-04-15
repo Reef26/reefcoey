@@ -60,7 +60,7 @@ a {
   text-decoration: none;
 }
 
-.project-link a {
+.project-link {
   margin: 0;
   font-family: Helvetica, sans-serif;
   font-weight: bold;
