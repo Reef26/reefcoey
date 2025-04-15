@@ -1,0 +1,134 @@
+:root {
+  --bg-color: #1f3837;
+  --text-color: #E3E3E3;
+  --accent-color: #3BD16F;
+  --block-bg: #2e4745;
+}
+
+.special-gothic-expanded-one-regular {
+  font-family: "Special Gothic Expanded One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+}
+
+header {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+h1 {
+  font-family: "Special Gothic Expanded One", sans-serif;
+  font-size: 2.5rem;
+  color: white;
+}
+
+.grid {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin: 2rem 0;
+  width: 100%;
+  max-width: 600px;
+}
+
+.block {
+  background-color: var(--block-bg);
+  padding: 1.5rem;
+  border-radius: 8px;
+  text-align: center;
+  text-decoration: none;
+  color: var(--text-color);
+  transition: background 0.3s ease;
+}
+
+.block:hover {
+  background-color: var(--accent-color);
+  color: var(--bg-color);
+}
+
+.block img {
+  max-width: 250px;
+  margin-bottom: 1rem;
+}
+
+/* Media Queries for larger screens */
+@media (min-width: 768px) {
+  .grid {
+    flex-direction: row;
+    justify-content: center;
+    gap: 3rem;
+  }
+
+  h1 {
+    font-size: 3rem;
+  }
+
+  .block {
+    width: 250px;
+  }
+}
+
+.projects {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin: 2rem 0;
+  width: 100%;
+  max-width: 900px;
+}
+
+.project-block {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: var(--block-bg);
+  padding: 1.5rem;
+  border-radius: 8px;
+  transition: background 0.3s ease;
+}
+
+.project-block:hover {
+  background-color: var(--accent-color);
+  color: var(--bg-color);
+}
+
+.project-image img {
+  max-width: 120px;
+  height: auto;
+  margin-right: 1.5rem;
+  border-radius: 0.5rem;
+}
+
+.project-text a {
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+.project-text p {
+  margin: 0;
+  font-size: 1rem;
+  line-height: 1.4;
+}
+
+@media (max-width: 768px) {
+  .project-block {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .project-image img {
+    margin: 0 0 1rem 0;
+  }
+}
