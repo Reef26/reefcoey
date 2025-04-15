@@ -97,6 +97,8 @@ h1 {
   }
 }
 
+/* Secctions below currently not being used because can be used to make blocks that sit nicely next to each other for underneath the main articles. */
+
 .grid {
   display: flex;
   flex-direction: column;
@@ -126,7 +128,6 @@ h1 {
   margin-bottom: 1rem;
 }
 
-/* Media Queries for larger screens */
 @media (min-width: 768px) {
   .grid {
     flex-direction: row;
