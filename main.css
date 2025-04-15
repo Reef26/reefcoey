@@ -97,6 +97,17 @@ h1 {
   }
 }
 
+.project-block {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.project-block.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 /* Secctions below currently not being used because can be used to make blocks that sit nicely next to each other for underneath the main articles. */
 
 .grid {
