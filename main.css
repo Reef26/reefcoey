@@ -26,6 +26,7 @@ body {
 a {
   margin: 0;
   font-family: Helvetica, sans-serif;
+  font-weight: bold;
   color: white;
   display: flex;
   flex-direction: column;
