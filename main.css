@@ -64,7 +64,7 @@ h1 {
   transition: background 0.3s ease;
 }
 
-.project-block:hover, .project-block:active {
+.project-block:hover {
   background-color: var(--accent-color);
   color: var(--bg-color);
 }
