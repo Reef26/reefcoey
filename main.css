@@ -33,17 +33,6 @@ body {
   padding: 1rem;
 }
 
-a {
-  margin: 0;
-  font-family: Helvetica, sans-serif;
-  font-weight: bold;
-  color: white;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-decoration: none;
-}
-
 header {
   margin-top: 2rem;
   text-align: center;
@@ -53,6 +42,27 @@ h1 {
   font-family: "Special Gothic Expanded One", sans-serif;
   font-size: 2.5rem;
   color: white;
+}
+
+h2 {
+  font-family: Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 1rem;
+  color: white;
+}
+
+a {
+  text-decoration: none; 
+}
+
+p {
+  margin: 0;
+  font-family: Helvetica, sans-serif;
+  font-weight: bold;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .projects {
