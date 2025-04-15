@@ -52,11 +52,15 @@ h2 {
   margin-top: -1.8rem;
 }
 
-a {
-  text-decoration: none; 
+h2:hover {
+  color: var(--accent-color);
 }
 
-p {
+a {
+  text-decoration: none;
+}
+
+.project-link a {
   margin: 0;
   font-family: Helvetica, sans-serif;
   font-weight: bold;
@@ -64,6 +68,7 @@ p {
   display: flex;
   flex-direction: column;
   align-items: center;
+  text-decoration: none; 
 }
 
 .projects {
