@@ -74,6 +74,7 @@ h1 {
   border-radius: 8px;
   transition: background 0.3s ease;
   transform: translateY(-20px);
+  animation: fadeSlideIn 0.8s ease forwards;
 }
 
 .project-block:hover {
@@ -94,8 +95,16 @@ h1 {
   line-height: 1.4;
 }
 
-.project-block.animate {
-  animation: fadeSlideIn 0.8s ease forwards;
+.project-block:nth-child(1) {
+  animation-delay: 0.2s;
+}
+
+.project-block:nth-child(2) {
+  animation-delay: 0.4s;
+}
+
+.project-block:nth-child(3) {
+  animation-delay: 0.6s;
 }
 
 @media (max-width: 768px) {
